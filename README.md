@@ -15,6 +15,8 @@ There are two main screens:
 
 The main mechanism for timing is the repeated checking of `AudioSettings.dspTime` in the `Update()` method of the MonoBehaviour singleton `PlaybackManager.cs` against the time of the next known "beat", which is a function of the current tempo.  When the current time is within a given convergence criterion (in this case, 50ms), the AudioSource for any new notes to be played are then scheduled at the time of the impending beat, and the next beat time is incremented.
 
+[Watch a quick demo at YouTube](https://www.youtube.com/watch?v=M1Pk5mpQEWU)
+
 Thanks to [Nathan Rosenberg](https://github.com/pianovox) for the tasty drum samples.
 
 Licenses
